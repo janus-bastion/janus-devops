@@ -6,6 +6,6 @@ updates:
       interval: "daily"
 
   - package-ecosystem: "docker"
-    directory: "/janus-infra"  # Pour le Dockerfile de ton infra
+    directory: "/janus-devops"  # Pour le Dockerfile de ton infra
     schedule:
       interval: "daily"
