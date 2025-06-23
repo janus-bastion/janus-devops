@@ -1,11 +1,16 @@
 version: 2
 updates:
   - package-ecosystem: "docker"
-    directory: "/"  # S'il y a un Dockerfile à la racine du repo
+    directory: "/"
     schedule:
       interval: "daily"
 
   - package-ecosystem: "docker"
-    directory: "janus-php/"  # Pour le Dockerfile de ton infra
+    directory: "janus-php/"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "docker"
+    directory: "janus-core/"
     schedule:
       interval: "daily"
