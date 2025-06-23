@@ -32,7 +32,6 @@ RUN chmod 600 /home/janus/.ssh/authorized_keys \
  && chown -R janus:janus /home/janus/.ssh
 
 EXPOSE 22
-
 WORKDIR /opt/janus
 
 COPY scripts/ ./scripts/
