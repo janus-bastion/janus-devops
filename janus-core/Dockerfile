@@ -34,6 +34,7 @@ RUN chmod 600 /home/janus/.ssh/authorized_keys \
 EXPOSE 22
 
 WORKDIR /opt/janus
+
 COPY scripts/ ./scripts/
 COPY config/ ./config/
 RUN chmod +x scripts/*.sh
