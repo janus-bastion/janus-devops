@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /var/run/sshd \
- && echo 'PermitRootLogin no'        >> /etc/ssh/sshd_config \
+ && echo 'PermitRootLogin no' >> /etc/ssh/sshd_config \
  && echo 'PasswordAuthentication no' >> /etc/ssh/sshd_config \
  && echo 'ForceCommand /opt/janus/scripts/janus.sh' >> /etc/ssh/sshd_config \
  && adduser --disabled-password --gecos '' janus \
