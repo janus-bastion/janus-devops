@@ -1,4 +1,4 @@
-FROM debian:12
+FROM debian:13
 
 LABEL maintainer="Janus Team <imtjanus@gmail.com>"
 LABEL project="janus-core"
